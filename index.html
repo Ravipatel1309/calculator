@@ -57,7 +57,7 @@
 
             try {
                 inputString = eval(inputString);
-                inputString = inputString.toString();
+                inputString = Number(inputString).toFixed(2);
             }
             catch (e) {
                 inputString = 'Invalid input';
